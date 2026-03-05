@@ -2,6 +2,11 @@ package gestioncuentas;
 
 public class CuentaAhorro extends Cuenta {
 
+    public CuentaAhorro(String titular, double interes) {
+        super(titular);
+        this.interes = interes;
+    }
+
     public double interes;
 
     public CuentaAhorro() {
@@ -9,6 +14,6 @@ public class CuentaAhorro extends Cuenta {
     }
 
     public void aplicarInteres() {
-        saldo = saldo + (saldo * interes / 100);
+        setSaldo(getSaldo() + (getSaldo() * interes / 100));
     }
 }
