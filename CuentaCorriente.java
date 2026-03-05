@@ -8,7 +8,7 @@ public class CuentaCorriente extends Cuenta {
     }
 
     private double comision;
-
+    
     public CuentaCorriente() {
         setComision(2.0);
     }

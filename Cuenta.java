@@ -1,5 +1,10 @@
 package gestioncuentas;
 
+/**
+ * Clase que representa una cuenta bancaria genérica.
+ * @author Yus
+ * @version 1.0
+ */
 public class Cuenta {
 
     public Cuenta(String titular) {
@@ -13,6 +18,9 @@ public class Cuenta {
         setSaldo(0);
     }
 
+    /**
+     * Metodo que imprime el nombre del titular con su saldo actual
+     */
     public void mostrarDatos() {
         System.out.println("Titular: " + getTitular());
         System.out.println("Saldo: " + getSaldo());
@@ -26,10 +34,21 @@ public class Cuenta {
             return false;
         }
     }
+
+    /**
+     *
+     * @param cantidad
+     * @return devuelve el saldo base, mas la suma del ingreso realizado.
+     */
     public void ingresar(double cantidad) {
         this.setSaldo(this.getSaldo() + cantidad);
     }
 
+    /**
+     *
+     * @param cantidad
+     * @return devuelve el saldo base, restando la cantidad retirada
+     */
     public void retirar(double cantidad) {
         this.setSaldo(this.getSaldo() - cantidad);
     }

@@ -1,7 +1,16 @@
 package gestioncuentas;
 
+/**
+ * Metodo principal
+ * @author yus
+ * @version 1.0
+ */
 public class Principal {
 
+    /**
+     * Metodo principal que ejecuta el programa
+     * @param args
+     */
     public static void main(String[] args) {
 
         Cuenta cuenta = new Cuenta("Ana López");
